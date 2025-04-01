@@ -2,23 +2,26 @@ import { atom, useAtom } from "jotai";
 import { useEffect } from "react";
 
 const pictures = [
-  "DSC00680",
-  "DSC00933",
-  "DSC00966",
-  "DSC00983",
-  "DSC01011",
-  "DSC01040",
-  "DSC01064",
-  "DSC01071",
-  "DSC01103",
-  "DSC01145",
-  "DSC01420",
-  "DSC01461",
-  "DSC01489",
-  "DSC02031",
-  "DSC02064",
-  "DSC02069",
+  "LP1",
+  "img2",
+  "img3",
+  "img4",
+  "img5",
+  "img6",
+  "img7",
+  "img8",
+  "img9",
+  "img10",
+  "img11",
+  "img12",
+  "img13",
+  "img14",
+  "img15",
+  "img16",
+  "img17",
+  "img18"
 ];
+
 
 export const pageAtom = atom(0);
 export const pages = [
@@ -50,12 +53,9 @@ export const UI = () => {
   return (
     <>
       <main className=" pointer-events-none select-none z-10 fixed  inset-0  flex justify-between flex-col">
-        <a
-          className="pointer-events-auto mt-10 ml-10"
-          href="https://lessons.wawasensei.dev/courses/react-three-fiber"
-        >
+       
           <img className="w-20" src="/images/wawasensei-white.png" />
-        </a>
+      
         <div className="w-full overflow-auto pointer-events-auto flex justify-center">
           <div className="overflow-auto flex items-center gap-4 max-w-full p-10">
             {[...pages].map((_, index) => (
@@ -89,54 +89,59 @@ export const UI = () => {
         <div className="relative">
           <div className="bg-white/0  animate-horizontal-scroll flex items-center gap-8 w-max px-8">
             <h1 className="shrink-0 text-white text-10xl font-black ">
-              Wawa Sensei
+              ZyrixCraft
             </h1>
             <h2 className="shrink-0 text-white text-8xl italic font-light">
-              React Three Fiber
+            Creativity
             </h2>
             <h2 className="shrink-0 text-white text-12xl font-bold">
-              Three.js
+            Innovation
             </h2>
             <h2 className="shrink-0 text-transparent text-12xl font-bold italic outline-text">
-              Ultimate Guide
+            Typography
             </h2>
             <h2 className="shrink-0 text-white text-9xl font-medium">
-              Tutorials
+            Branding
             </h2>
             <h2 className="shrink-0 text-white text-9xl font-extralight italic">
-              Learn
+            Illustration
             </h2>
             <h2 className="shrink-0 text-white text-13xl font-bold">
-              Practice
+            Aesthetics
             </h2>
             <h2 className="shrink-0 text-transparent text-13xl font-bold outline-text italic">
-              Creative
+            Minimalism
             </h2>
           </div>
           <div className="absolute top-0 left-0 bg-white/0 animate-horizontal-scroll-2 flex items-center gap-8 px-8 w-max">
             <h1 className="shrink-0 text-white text-10xl font-black ">
-              Wawa Sensei
+            ZyrixCraft
             </h1>
             <h2 className="shrink-0 text-white text-8xl italic font-light">
-              React Three Fiber
+            Color Theory
             </h2>
             <h2 className="shrink-0 text-white text-12xl font-bold">
-              Three.js
+            Logo Design
             </h2>
             <h2 className="shrink-0 text-transparent text-12xl font-bold italic outline-text">
-              Ultimate Guide
+            User Inter
+            
+            
+            
+            
+            ce
             </h2>
             <h2 className="shrink-0 text-white text-9xl font-medium">
-              Tutorials
+            Photoshop
             </h2>
             <h2 className="shrink-0 text-white text-9xl font-extralight italic">
-              Learn
+            Vector Art
             </h2>
             <h2 className="shrink-0 text-white text-13xl font-bold">
-              Practice
+            Visual Identity
             </h2>
             <h2 className="shrink-0 text-transparent text-13xl font-bold outline-text italic">
-              Creative
+            Web Design
             </h2>
           </div>
         </div>
