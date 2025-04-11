@@ -54,9 +54,10 @@ export const UI = () => {
     <>
       <main className=" pointer-events-none select-none z-10 fixed  inset-0  flex justify-between flex-col">
        
-          <img className="w-20" src="/images/wawasensei-white.png" />
-      
+          <img className=" w-[8em] " src="/images/wawasensei-white.png" />
         <div className="w-full overflow-auto pointer-events-auto flex justify-center">
+        <button   onClick={() => window.open("https://zyrixcraft.in", "_blank")}  
+  className="absolute top-2 right-6 hover:bg-black hover:text-white border-transparent hover:cursor-pointer transition-all duration-300 z-[10000] px-4 py-3 rounded-full text-lg uppercase shrink-0 border bg-white/90 text-black">Back To main</button>
           <div className="overflow-auto flex items-center gap-4 max-w-full p-10">
             {[...pages].map((_, index) => (
               <button
@@ -124,12 +125,7 @@ export const UI = () => {
             Logo Design
             </h2>
             <h2 className="shrink-0 text-transparent text-12xl font-bold italic outline-text">
-            User Inter
-            
-            
-            
-            
-            ce
+            User Interface
             </h2>
             <h2 className="shrink-0 text-white text-9xl font-medium">
             Photoshop
